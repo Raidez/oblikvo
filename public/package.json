@@ -1,0 +1,12 @@
+{
+	"name": "oblikvo",
+	"version": "1",
+	"description": "",
+	"main": "index.html",
+	"build": {
+		"nwVersion": "0.63.1",
+		"targets": [
+			"zip"
+		]
+	}
+}

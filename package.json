@@ -2,13 +2,18 @@
 	"name": "oblikvo",
 	"scripts": {
 		"dev:front": "rollup -c -w",
-		"build:front": "rollup -c"
+		"build:front": "rollup -c",
+		"dev:app": "run --x64 public/",
+		"build:app": "build --win --x64 public/",
+		"dev": "run-p dev:*",
+		"build": "run-s build:front build:app"
 	},
 	"devDependencies": {
 		"@rollup/plugin-commonjs": "^21.1.0",
 		"@rollup/plugin-node-resolve": "^13.2.1",
 		"autoprefixer": "^10.4.4",
 		"npm-run-all": "^4.1.5",
+		"nwjs-builder-phoenix": "^1.15.0",
 		"postcss": "^8.4.12",
 		"rollup": "^2.70.2",
 		"rollup-plugin-css-only": "^3.1.0",
